@@ -44,26 +44,7 @@
             </div>
         </header>
         <main>
-            <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li
-                        data-bs-target="#carouselId"
-                        data-bs-slide-to="0"
-                        class="active"
-                        aria-current="true"
-                        aria-label="First slide"
-                    ></li>
-                    <li
-                        data-bs-target="#carouselId"
-                        data-bs-slide-to="1"
-                        aria-label="Second slide"
-                    ></li>
-                    <li
-                        data-bs-target="#carouselId"
-                        data-bs-slide-to="2"
-                        aria-label="Third slide"
-                    ></li>
-                </ol>
+            <div id="carouselId" class="carousel slide" data-bs-ride="carousel" style="z-index: 2;">
                 <div class="carousel-inner" role="listbox">
                     <div class="carousel-item active">
                         <img src="/img/bannerIron.jpg" alt="banner" height="auto" width="100%">
@@ -96,10 +77,23 @@
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
-            
-            <div class="masthead default subnav full dark">
+          
+            <div class="container" style="z-index: 1;">
+                <div class="row">
+                    <div class="col-sm-3 p-4 bg-dark text-white border-end">
+                        <p>Hola</p>
+                    </div>
+                    <div class="col-sm-3 p-4 bg-dark text-white border-end">
+                        <p>Hola</p>
+                    </div>
+                    <div class="col-sm-3 p-4 bg-dark text-white border-end">
+                        <p>Hola</p>
+                    </div>
+                    <div class="col-sm-3 p-4 bg-dark text-white" style="overlay: none;">
+                    </div>
+                </div>
             </div>
-            <div class="container-fluid">
+            <div class="container-fluid" style="z-index: 3;">
                 <img src="/img/ironcomic.png" alt="desc" height="auto" width="100%">
             </div>
         </main> 
