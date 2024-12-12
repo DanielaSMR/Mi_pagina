@@ -35,14 +35,7 @@
             .main-section img:hover {
                 transition: transform 0.3s;
             }
-            .image-container {
-                position: relative;
-                overflow: hidden;
-                z-index: 1;
-            }
             .image-container img {
-                width: 100%;
-                border-radius: 10px;
                 transition: transform 0.3s;
             }
             .image-container::after {
@@ -123,68 +116,66 @@
 
             </div>
         </header>
-        <main>
-            <div id="carouselId" class="carousel slide" data-bs-ride="carousel" style="z-index: 2;">
-                <div class="carousel-inner rounded" role="listbox">
-                    <div class="carousel-item active">
-                        <img src="/img/bannerIron.jpg" alt="banner" height="auto" width="100%">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="/img/ironman2.jpg" alt="banner2" height="auto" width="100%">
+        <main class="bg-dark">
+                <div id="carouselId" class="carousel slide" data-bs-ride="carousel" style="z-index: 2;">
+                    <div class="carousel-inner rounded" role="listbox">
+                        <div class="carousel-item active">
+                            <img src="/img/bannerIron.jpg" alt="banner" height="auto" width="100%">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/img/ironman2.jpg" alt="banner2" height="auto" width="100%">
 
-                    </div>
-                    <div class="carousel-item">
-                        <img src="/img/ironman3.jpg" alt="banner2" height="auto" width="100%">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/img/ironman3.jpg" alt="banner2" height="auto" width="100%">
 
+                        </div>
                     </div>
+                    <button
+                        class="carousel-control-prev"
+                        type="button"
+                        data-bs-target="#carouselId"
+                        data-bs-slide="prev"
+                    >
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button
+                        class="carousel-control-next"
+                        type="button"
+                        data-bs-target="#carouselId"
+                        data-bs-slide="next"
+                    >
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
-                <button
-                    class="carousel-control-prev"
-                    type="button"
-                    data-bs-target="#carouselId"
-                    data-bs-slide="prev"
-                >
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button
-                    class="carousel-control-next"
-                    type="button"
-                    data-bs-target="#carouselId"
-                    data-bs-slide="next"
-                >
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-          
-            <div class="container main-section mt-4">
-                <div class="row text-center position-relative">
-                    <div class="col-sm-3 p-4 text-white border-end">
-                        <p>Información 1</p>
-                    </div>
-                    <div class="col-sm-3 p-4 text-white border-end">
-                        <p>Información 2</p>
-                    </div>
-                    <div class="col-sm-3 p-4 text-white border-end">
-                        <p>Información 3</p>
-                    </div>
-                    <div class="col-sm-3 p-4 text-white">
-                        <p>Información 4</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="container-fluid mt-4">
-                <div class="image-container transform scale-105">
-                    <img src="/img/ironcomic.png" alt="desc" height="auto" width="100%">
-                    <div class="overlay d-flex justify-content-center align-items-center">
-                        <div class="overlay-text">Toney Strak<br>El inventor millonario</div>
-                    </div>
-                </div>
-            </div>
-
             
+                <div class="container main-section mt-4">
+                    <div class="row text-center position-relative">
+                        <div class="col-sm-3 p-4 text-white border-end">
+                            <p>Información 1</p>
+                        </div>
+                        <div class="col-sm-3 p-4 text-white border-end">
+                            <p>Información 2</p>
+                        </div>
+                        <div class="col-sm-3 p-4 text-white border-end">
+                            <p>Información 3</p>
+                        </div>
+                        <div class="col-sm-3 p-4 text-white">
+                            <p>Información 4</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-fluid mt-4">
+                    <div class="image-container transform scale-105 position-relative overflow-hidden z-1">
+                        <img src="/img/ironcomic.png" alt="desc" class="rounded-3 transition-transform" height="auto" width="100%">
+                        <div class="overlay d-flex justify-content-center align-items-center">
+                            <div class="overlay-text">Toney Strak<br>El inventor millonario</div>
+                        </div>
+                    </div>
+                </div>            
         </main> 
         <footer class="bg-dark text-white text-center p-4">
             <div class="container">
