@@ -4,9 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Orbitron', sans-serif;
+        }
+        .desktopNav__lower .nav-link {
+            color: #fff;
+            transition: color 0.3s;
+        }
+        .desktopNav__lower .nav-link:hover {
+            color: #f00;
+        }
+    </style>
 </head>
-<body>
+<body class="bg-dark">
+
     <header>
+
         <div class="container-fluid pt-5 pb-3 bg-dark text-white desktopNa">
             <div class="desktopNav__upper">
                 <div class="row">
@@ -37,8 +54,95 @@
             </div>
         </div>
 
-        </div>
     </header>
+    
+    <main>
+
+        <div id="accordion">
+            <div class="card" >
+              <div class="card-header">
+                <a class="btn" data-bs-toggle="collapse" href="#collapseOne">
+                  VISION 360
+                </a>
+              </div>
+              <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
+                <div class="card-body bg-black p-4">
+                    <div class="card img-fluid" style="width: auto;height: 350px;overflow: hidden;">
+                        <img src="img/Untitled.png" alt="" class="img-fluid" style="object-fit: cover; width: 100%; height: 100%;">
+                        <div class="card-img-overlay ">
+                        <h3 class="card-title" style="font-weight: bold;color: #cc4d03;">0.1</h3>
+                          <h4 class="card-title text-white"><strong>Vision 360º</strong></h4>
+                          <p class="card-text text-white">El casco de Iron Man le proporciona a<br>
+                            Tony una pantalla de visualización frontal<br>
+                            que le proporciona una visión de 360<br>
+                            ​​grados y acceso a información sobre su<br>
+                            entorno y sus enemigos.</p>
+                        </div>
+                      </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header">
+                <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseTwo">
+                    EXPLOSIONES DE ENERGIA
+                </a>
+              </div>
+              <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+                <div class="card-body bg-black p-4">
+                    <div class="card img-fluid" style="width: auto;height: 350px;overflow: hidden;">
+                        <img src="img/Blast.png" alt="" class="img-fluid" style="object-fit: cover; width: 100%; height: 100%;">
+                        <div class="card-img-overlay ">
+                        <h3 class="card-title" style="font-weight: bold;color: #cc4d03;">0.1</h3>
+                          <h4 class="card-title text-white"><strong>Vision 360º</strong></h4>
+                          <p class="card-text text-white">El unibeam, un arma centrada en <br>
+                            el pecho de Iron Man, es capaz de <br>
+                            proyectar una luz deslumbrante y también <br>
+                            puede usarse como un poderoso rayo de fuerza.</p>
+                        </div>
+                      </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header">
+                <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseThree">
+                    RAYOS REPULSORES
+                </a>
+              </div>
+              <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+                <div class="card-body">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </div>
+              </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                  <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseFour">
+                        EXTREMIS
+                    </a>
+                </div>
+                <div id="collapseFour" class="collapse" data-bs-parent="#accordion">
+                  <div class="card-body">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                  <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseFive">
+                        COLECCION DE ARMADURAS
+                    </a>
+                </div>
+                <div id="collapseFive" class="collapse" data-bs-parent="#accordion">
+                  <div class="card-body">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  </div>
+                </div>
+            </div>
+          </div>
+
+    </main>
 
     <footer class="bg-dark text-white text-center p-4">
         <div class="container">
