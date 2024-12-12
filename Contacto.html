@@ -11,30 +11,64 @@
         body {
             font-family: 'Orbitron', sans-serif;
         }
-        .desktopNav__lower .nav-link {
-            color: #fff;
-            transition: color 0.3s;
+        .form-control-custom {
+            background-color: #333333;
+            border: none;
+            color: #ffffff;
         }
-        .desktopNav__lower .nav-link:hover {
-            color: #f00;
+        .form-control-custom::placeholder {
+            color: #bbbbbb;
+        }
+        .form-control-custom:focus {
+            background-color: #333333;
+            color: #ffffff;
+            box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+        }
+        .btn-custom {
+            background-color: #ff0000;
+            border: none;
+            color: #ffffff;
+            transition: background-color 0.3s ease-in-out;
+        }
+        .btn-custom:hover {
+            background-color: #cc0000;
+        }
+        .contact-header {
+            text-align: center;
+            color: #ffffff;
+            margin-bottom: 20px;
+        }
+        .contact-header h1 {
+            font-size: 2.5rem;
+        }
+        .contact-header p {
+            font-size: 1.2rem;
+        }
+        .form-label {
+            color: #ffffff;
+        }
+        .navbar-custom .nav-link {
+            color: #ffffff;
         }
     </style>
 </head>
 <body class="bg-dark">
-
     <header>
-
-        <div class="container-fluid pt-5 pb-3 bg-dark text-white desktopNa">
+        <div class="container-fluid pt-5 pb-3 bg-dark text-white desktopNa ">
             <div class="desktopNav__upper">
-                <div class="row">
-                    <div class="col-sm-12 position-relative">
+                <div class="col-sm-12 position-relative">
+                    <a href="P_Principal.html" target="_blank">
                         <img src="/img/Marvel_Logo.svg.png" alt="IRONMAN" class="position-absolute start-50 translate-middle-x" style="margin-top: -50px;" width="130" height="50">
-                    </div>
+                    </a>
+                    <hr style="margin: 0px;">
                 </div>
             </div>
         </div>
-        <div class="container-fluid bg-dark desktopNav__lower">
+        <div class="container-fluid bg-dark desktopNav__lower border-bottom">
             <div class="row text-center text-white fw-bold">
+                <div class="col-sm">
+
+                </div>
                 <div class="col-sm">
                     <a class="nav-link" href="Biografia.html">Biografia</a>
                     <p></p>
@@ -43,24 +77,47 @@
                     <a class="nav-link"  href="Habilidades.html">Habilidades</a>
                 </div>
                 <div class="col-sm">
-                    <a class="nav-link"  href="Enemigos.html">Enemigos</a>
-                </div>
-                <div class="col-sm">
                     <a class="nav-link"  href="Logros.html">Logros</a>
                 </div>
                 <div class="col-sm">
                     <a class="nav-link"  href="Contacto.html">Contacto</a>
                 </div>
+                <div class="col-sm">
+
+                </div>
             </div>
         </div>
-
     </header>
-    
     <main>
-
+        <div class="container mt-4 p-4 bg-dark text-white rounded-3 shadow">
+            <div class="contact-header">
+                <h1>Contactar con Iron Man</h1>
+                <p>Si tienes alguna pregunta o quieres contactar con Tony Stark, por favor completa el siguiente formulario.</p>
+            </div>
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Nombre</label>
+                    <input type="text" class="form-control form-control-custom text-white border-0" id="name" placeholder="Tu nombre">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Correo Electrónico</label>
+                    <input type="email" class="form-control form-control-custom text-white border-0" id="email" placeholder="nombre@ejemplo.com">
+                </div>
+                <div class="mb-3">
+                    <label for="subject" class="form-label">Asunto</label>
+                    <input type="text" class="form-control form-control-custom text-white border-0" id="subject" placeholder="Asunto del mensaje">
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Mensaje</label>
+                    <textarea class="form-control form-control-custom text-white border-0" id="message" rows="4" placeholder="Escribe tu mensaje aquí"></textarea>
+                </div>
+                <button type="submit" class="btn btn-custom">Enviar</button>
+            </form>
+        </div>
     </main>
 
     <footer class="bg-dark text-white text-center p-4">
+        <hr>
         <div class="container">
             <img src="/img/signoIron.png" alt="Iron Man Logo" width="100" class="mb-2">
             <p>&copy; 2024 Iron Man Fan Page. All Rights Reserved.</p>
